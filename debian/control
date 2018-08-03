@@ -11,11 +11,13 @@ Build-Depends: debhelper (>> 9),
                libxalan2-java,
                libxerces2-java
 Build-Depends-Indep: doxygen
-Maintainer: William Blough <devel@blough.us>
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: William Blough <devel@blough.us>
 Standards-Version: 3.9.8
 Homepage: https://xerces.apache.org/xerces-c/
 Vcs-Git: https://bitbucket.org/bblough/xerces-c.git
 Vcs-Browser: https://bitbucket.org/bblough/xerces-c/src
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ stretch
 
 Package: libxerces-c3.1
 Architecture: any
