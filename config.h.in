@@ -66,6 +66,9 @@
 /* Define to 1 if you have the `gettimeofday' function. */
 #undef HAVE_GETTIMEOFDAY
 
+/* Define to 1 if you have the `gmtime_r' function. */
+#undef HAVE_GMTIME_R
+
 /* Define to 1 if you have the `iconv' function. */
 #undef HAVE_ICONV
 
@@ -156,6 +159,9 @@
 /* Define to 1 if you have the `setlocale' function. */
 #undef HAVE_SETLOCALE
 
+/* Define to 1 if you have the `snprintf' function. */
+#undef HAVE_SNPRINTF
+
 /* Define to 1 if you have the `socket' function. */
 #undef HAVE_SOCKET
 
@@ -179,6 +185,9 @@
 
 /* define if the compiler supports the std namespace */
 #undef HAVE_STD_NAMESPACE
+
+/* define if the compiler supports ISO C++11 <thread> and <mutex> */
+#undef HAVE_STD_THREAD
 
 /* Define to 1 if you have the `strcasecmp' function. */
 #undef HAVE_STRCASECMP
@@ -234,6 +243,9 @@
 /* Define to 1 if you have the <sys/types.h> header file. */
 #undef HAVE_SYS_TYPES_H
 
+/* Define to 1 if you have the `timegm' function. */
+#undef HAVE_TIMEGM
+
 /* Define to 1 if you have the `towlower' function. */
 #undef HAVE_TOWLOWER
 
@@ -277,12 +289,14 @@
    char*. */
 #undef ICONV_USES_CONST_POINTER
 
-/* Define to the sub-directory in which libtool stores uninstalled libraries.
-   */
-#undef LT_OBJDIR
+/* Definition of Xerces interface major version */
+#undef INTERFACE_VERSION_MAJOR
 
-/* Define to 1 if your C compiler doesn't accept -c and -o together. */
-#undef NO_MINUS_C_MINUS_O
+/* Definition of Xerces interface minor version */
+#undef INTERFACE_VERSION_MINOR
+
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
+#undef LT_OBJDIR
 
 /* Name of package */
 #undef PACKAGE
@@ -339,12 +353,18 @@
 /* Define to true if autoconf is used in this configuration */
 #undef XERCES_AUTOCONF
 
+/* Definition of Xerces grammar serialization level */
+#undef XERCES_GRAMMAR_SERIALIZATION_LEVEL
+
 /* Define if namespaces is supported by the compiler */
 #undef XERCES_HAS_CPP_NAMESPACE
 
 /* Define to have SSE2 instruction support detected at runtime using __cpuid
    */
 #undef XERCES_HAVE_CPUID_INTRINSIC
+
+/* Define to 1 if cstdint is functional. */
+#undef XERCES_HAVE_CSTDINT
 
 /* Define to 1 if you have emmintrin.h */
 #undef XERCES_HAVE_EMMINTRIN_H
@@ -362,11 +382,11 @@
 /* Define to have SSE2 instruction used at runtime */
 #undef XERCES_HAVE_SSE2_INTRINSIC
 
+/* Define to 1 if we have stdint.h */
+#undef XERCES_HAVE_STDINT_H
+
 /* Define to 1 if we have sys/types.h */
 #undef XERCES_HAVE_SYS_TYPES_H
-
-/* Define to have Xerces_autoconf_config.hpp include wchar.h */
-#undef XERCES_INCLUDE_WCHAR_H
 
 /* Define if there is support for L"widestring" */
 #undef XERCES_LSTRSUPPORT
@@ -399,14 +419,23 @@
 /* An appropriate signed 64 bit integer type */
 #undef XERCES_S64BIT_INT
 
+/* Define as the appropriate SIZE_MAX macro */
+#undef XERCES_SIZE_MAX
+
 /* Define as the appropriate size_t type */
 #undef XERCES_SIZE_T
+
+/* Define as the appropriate SSIZE_MAX macro */
+#undef XERCES_SSIZE_MAX
 
 /* Define as the appropriate ssize_t type */
 #undef XERCES_SSIZE_T
 
 /* Define if the std namespace is supported */
 #undef XERCES_STD_NAMESPACE
+
+/* Define as the platform's template extern attribute */
+#undef XERCES_TEMPLATE_EXTERN
 
 /* An appropriate unsigned 16 bit integer type */
 #undef XERCES_U16BIT_INT
@@ -438,6 +467,9 @@
 /* Define to use the POSIX mutex mgr */
 #undef XERCES_USE_MUTEXMGR_POSIX
 
+/* Define to use the C++ standard mutex mgr (requires C++11) */
+#undef XERCES_USE_MUTEXMGR_STD
+
 /* Define to use the Windows mutex mgr */
 #undef XERCES_USE_MUTEXMGR_WINDOWS
 
@@ -467,6 +499,15 @@
 
 /* Define to use the Windows transcoder */
 #undef XERCES_USE_TRANSCODER_WINDOWS
+
+/* Definition of Xerces major version */
+#undef XERCES_VERSION_MAJOR
+
+/* Definition of Xerces minor version */
+#undef XERCES_VERSION_MINOR
+
+/* Definition of Xerces patch version */
+#undef XERCES_VERSION_REVISION
 
 /* Define to the 16 bit type used to represent Xerces UTF-16 characters */
 #undef XERCES_XMLCH_T

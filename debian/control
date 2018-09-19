@@ -1,9 +1,8 @@
 Source: xerces-c
 Section: libs
 Priority: optional
-Build-Depends: debhelper (>> 9),
+Build-Depends: debhelper (>> 11),
                default-jre-headless | default-jre,
-               dh-autoreconf,
                libatk-wrapper-java,
                libcurl4-gnutls-dev,
                libicu-dev,
@@ -11,13 +10,14 @@ Build-Depends: debhelper (>> 9),
                libxalan2-java,
                libxerces2-java
 Build-Depends-Indep: doxygen
-Maintainer: William Blough <devel@blough.us>
-Standards-Version: 3.9.8
+Maintainer: William Blough <bblough@debian.org>
+Standards-Version: 4.2.1
+Vcs-Browser: https://salsa.debian.org/bblough/xerces-c
+Vcs-Git: https://salsa.debian.org/bblough/xerces-c.git
 Homepage: https://xerces.apache.org/xerces-c/
-Vcs-Git: https://bitbucket.org/bblough/xerces-c.git
-Vcs-Browser: https://bitbucket.org/bblough/xerces-c/src
 
-Package: libxerces-c3.1
+
+Package: libxerces-c3.2
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
@@ -39,7 +39,7 @@ Provides: libxerces-c3-dev
 Architecture: any
 Depends: libc6-dev | libc-dev,
          libicu-dev,
-         libxerces-c3.1 (= ${binary:Version}),
+         libxerces-c3.2 (= ${binary:Version}),
          ${misc:Depends}
 Conflicts: libxerces-c2-dev,
            libxerces25-dev,

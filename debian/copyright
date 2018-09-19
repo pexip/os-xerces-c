@@ -1,4 +1,4 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Xerces-C++
 Source: https://xerces.apache.org/xerces-c/
 Comment: Upstream package contained 3rd party libraries and prebuilt
