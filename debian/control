@@ -17,7 +17,7 @@ Standards-Version: 3.9.8
 Homepage: https://xerces.apache.org/xerces-c/
 Vcs-Git: https://bitbucket.org/bblough/xerces-c.git
 Vcs-Browser: https://bitbucket.org/bblough/xerces-c/src
-XS-Pexip-Upstream: http://ftp.debian.org/debian/ stretch
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ buster
 
 Package: libxerces-c3.1
 Architecture: any
