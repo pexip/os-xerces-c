@@ -1,3 +1,18 @@
+xerces-c (3.2.2+debian-1+deb10u1pexip1) pexip; urgency=medium
+
+  * New upstream version
+
+ -- Steve McIntyre <steve.mcintyre@pexip.com>  Tue, 22 Dec 2020 11:33:51 +0000
+
+xerces-c (3.2.2+debian-1+deb10u1) buster-security; urgency=high
+
+  * Non-maintainer upload.
+  * CVE-2018-1311 mitigation: fix use-after-free vulnerability when
+    processing external DTD, at the expense of a memory leak.  Users may
+    mitigate both by setting the XERCES_DISABLE_DTD environment variable.
+
+ -- Sylvain Beucler <beuc@debian.org>  Tue, 15 Dec 2020 15:55:44 +0100
+
 xerces-c (3.2.2+debian-1pexip2) pexip; urgency=medium
 
   * Rebuild in buster environment
